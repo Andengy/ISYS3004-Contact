@@ -57,18 +57,6 @@ nav ul li a:hover {
 }
 
 /* CSS for body paragraph */
-section p {
-    background-color: rgba(211, 211, 211, 0.8); 
-    padding: 20px;
-    width: 300px; 
-    float: left;
-    margin-left: 10%; 
-    clear: both;
-    display: block;
-    margin-top: 150px; 
-    border-radius: 10px; 
-}
-
 section h2 {
     background-color: rgba(211, 211, 211); 
     padding: 20px 100px;
@@ -96,6 +84,23 @@ section h2 {
     height: 100%; 
     object-fit: cover; 
     z-index: -1;
+}
+
+section h3 {
+    background-color: rgb(200 200 200); 
+    padding: 400px;
+    width: 300px; 
+    float: left;
+    margin-left: 10%; 
+    clear: both;
+    display: block;
+    margin-top: 150px; 
+    border-radius: 30px; 
+}
+
+section h3 {
+    text-align: left;
+    text-align: 
 }
 
 
@@ -135,4 +140,5 @@ nav ul li a:hover {
 footer {
     background-color: beige;
     padding: 20px;
+    margin-top: 1350px;
 }
