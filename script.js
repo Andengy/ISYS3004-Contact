@@ -1,4 +1,4 @@
-/* JavaScript for form validation */
+/* JavaScript form validation */
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (e) => {
@@ -8,29 +8,24 @@ contactForm.addEventListener('submit', (e) => {
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    // Check if any field is empty
+    /* Check if any field is empty */
     if (name === '' || email === '' || message === '') {
         alert('Please fill out all fields.');
         return;
     }
 
-    // Check if email is valid
+    /* Check if email is valid */
     if (!isValidEmail(email)) {
         alert('Please enter a valid email address.');
         return;
     }
 
-    // Proceed with form submission
+    /* Proceed with form submission */
     alert('Form submitted successfully!');
 });
 
-// Function to validate email format
+/*Function to validate email format */
 function isValidEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
-
-/* JavaScript for toggling dark mode */
-document.getElementById('darkModeToggle').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-});
